@@ -4,7 +4,88 @@
  
 @layer base {
   :root {
+    /* Edited colors */
     --background: 0 0% 100%;
+    
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    /* Theme colors */
+    --web-orange-50: #fffcea;
+    --web-orange-100: #fff5c5;
+    --web-orange-200: #ffea85;
+    --web-orange-300: #ffd946;
+    --web-orange-400: #ffc61b;
+    --web-orange-500: #ffa300; /* DEFAULT */
+    --web-orange-600: #e27a00;
+    --web-orange-700: #bb5402;
+    --web-orange-800: #984108;
+    --web-orange-900: #7c350b;
+    --web-orange-950: #481a00;
+    
+    --web-sky-50: #ebfdff;
+    --web-sky-100: #cef8ff;
+    --web-sky-200: #a2f0ff;
+    --web-sky-300: #63e3fd;
+    --web-sky-400: #1ccbf4;
+    --web-sky-500: #00b5e2; /* DEFAULT */
+    --web-sky-600: #038ab7;
+    --web-sky-700: #0a6f94;
+    --web-sky-800: #125a78;
+    --web-sky-900: #144b65;
+    --web-sky-950: #063146;
+
+    --web-blue-50: #f0f9ff;
+    --web-blue-100: #dff2ff;
+    --web-blue-200: #b9e5fe;
+    --web-blue-300: #7bd2fe;
+    --web-blue-400: #34bbfc;
+    --web-blue-500: #0aa4ed;
+    --web-blue-600: #0082cb;
+    --web-blue-700: #00629b; /* DEFAULT */
+    --web-blue-800: #055887;
+    --web-blue-900: #0a4970;
+    --web-blue-950: #072e4a;
+
+    --web-gray-50: #f5f6f6;
+    --web-gray-100: #e6e7e7;
+    --web-gray-200: #cfd0d2;
+    --web-gray-300: #aeb0b2;
+    --web-gray-400: #85888b;
+    --web-gray-500: #75787b; /* DEFAULT */
+    --web-gray-600: #5b5d5f;
+    --web-gray-700: #4d4f51;
+    --web-gray-800: #444546;
+    --web-gray-900: #3b3c3e;
+    --web-gray-950: #252527;
+
+    /* Color Palette */
+    --palete-red: 348 88% 39%;
+    --palete-orange: 38 100% 50%;
+    --palete-yellow: 49 100% 50%;
+    --palete-white-green: 87 71% 44%;
+    --palete-green: 148 100% 26%;
+    --palete-purple: 300 68% 35%;
+    --palete-teal: 184 100% 33%;
+    --palete-blue: 202 100% 30%;
+    --palete-cyan: 192 100% 44%;
+
+    /* Dark Color Palette */
+    --palete-red-dark: 340°, 62%, 32%;
+    --palete-orange-dark: 26°, 81%, 52%;
+    --palete-yellow-dark: 44°, 100%, 59%;
+    --palete-white-green-dark: 81°, 68%, 33%;
+    --palete-green-dark: 159°, 100%, 19%;
+    --palete-purple-dark: 292°, 56%, 33%;
+    --palete-teal-dark: 182°, 100%, 23%;
+    --palete-blue-dark: 212°, 100%, 17%;
+
+    /* Added colors */
+
+    /* Default colors */
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,17 +94,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
  
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
  
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
  
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -36,7 +111,18 @@
   }
  
   .dark {
+    /* Edited colors */
     --background: 222.2 84% 4.9%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Added colors */
+
+    /* Default colors */
     --foreground: 210 40% 98%;
  
     --card: 222.2 84% 4.9%;
@@ -45,17 +131,11 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
  
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
  
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
  
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
