@@ -4,22 +4,13 @@
  
 @layer base {
   :root {
-    /* Edited colors */
-    --background: 0 0% 100%;
-    
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
     /* Theme colors */
     --web-orange-50: #fffcea;
     --web-orange-100: #fff5c5;
     --web-orange-200: #ffea85;
     --web-orange-300: #ffd946;
     --web-orange-400: #ffc61b;
-    --web-orange-500: #ffa300; /* DEFAULT */
+    --web-orange-500: #ffa300; /* DEFAULT FFF3E0 */
     --web-orange-600: #e27a00;
     --web-orange-700: #bb5402;
     --web-orange-800: #984108;
@@ -83,16 +74,26 @@
     --palete-teal-dark: 182°, 100%, 23%;
     --palete-blue-dark: 212°, 100%, 17%;
 
+    /* Edited colors */
+    --background: 0 0% 100%;
+    
+    --primary: 36 85% 13%;
+    --primary-foreground: 210 40% 98%;
+
+    --accent: 35 100% 90%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
     /* Added colors */
+    --primary-title: var(--web-orange-500);
 
     /* Default colors */
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
  
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -112,24 +113,32 @@
  
   .dark {
     /* Edited colors */
-    --background: 222.2 84% 4.9%;
+    /* --background: 40 15% 10%; */
+    /* --background: 223 14% 10%; */
+    --background: 220 15% 16%;
 
-    --primary: 210 40% 98%;
+    --primary: 37 100% 94%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --accent: 217.2 32.6% 17.5%;
+    /* --accent: 40 33% 18%; */
+    --accent: 220 17% 21%;
+    /* 40 15% 16% */
     --accent-foreground: 210 40% 98%;
 
+    /* --popover: 30 8% 9%; */
+    --popover: 220 15% 14%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --border: 40 15% 16%;
+
     /* Added colors */
+    --primary-title: var(--web-orange-500);
 
     /* Default colors */
     --foreground: 210 40% 98%;
  
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
  
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -140,7 +149,6 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
  
-    --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
@@ -152,5 +160,52 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* scroll bar styles */
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 5px;
+} */
+
+/* About animation */
+@keyframes aboutSliderDesktop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-40rem * 4));
+  }
+}
+
+@keyframes aboutSliderMobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-20rem * 4));
+  }
+}
+
+#sliderAbout-track {
+  display: flex;
+  animation: aboutSliderDesktop 30s linear infinite;
+  width: calc(40rem * 8);
+}
+
+@media (max-width: 768px) {
+  #sliderAbout-track {
+    animation: aboutSliderMobile 30s linear infinite;
+    width: calc(20rem * 8);
   }
 }

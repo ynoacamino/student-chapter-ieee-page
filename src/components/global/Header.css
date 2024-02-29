@@ -1,0 +1,11 @@
+#header {
+  animation: enhance-header linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 200px;
+} 
+
+@keyframes enhance-header {
+  to {
+    border-bottom: 1px solid var(--primary);
+  }
+}

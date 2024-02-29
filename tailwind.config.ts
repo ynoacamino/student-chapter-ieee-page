@@ -30,6 +30,7 @@ const config = {
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
+          title: 'var(--primary-title)',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
