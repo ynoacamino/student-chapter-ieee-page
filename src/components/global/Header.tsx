@@ -30,10 +30,8 @@ export default function Header() {
     <header id="header" className="w-full flex justify-center items-center text-primary sticky top-0 bg-background backdrop-blur-md z-10">
       <div className="w-full max-w-6xl py-2 px-6 flex justify-between items-center">
         <NextLink href="/">
-          <h1 className="font-bold text-xl flex flex-col leading-none text-center">
-            <IEEETitle className="w-40 h-auto" />
-            <span className="sr-only">IEEE COMPUTER SOCIETY</span>
-          </h1>
+          <IEEETitle className="w-40 h-auto" />
+          <span className="sr-only">IEEE COMPUTER SOCIETY</span>
         </NextLink>
         <div className="flex gap-2 items-center">
           <nav className="flex items-center justify-start gap-10">

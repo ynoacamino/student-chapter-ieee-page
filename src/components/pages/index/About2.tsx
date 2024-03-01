@@ -1,3 +1,4 @@
+import Gradient from '@/components/ui/gradient';
 import Link from 'next/link';
 
 export default function About2() {
@@ -13,8 +14,8 @@ export default function About2() {
             ))
           }
         </div>
-        <div className="absolute top-0 left-0 w-10 md:w-20 bg-gradient-to-r from-background to-transparent h-full" />
-        <div className="absolute top-0 right-0 w-10 md:w-20 bg-gradient-to-r from-transparent to-background h-full" />
+        <Gradient direction="l" />
+        <Gradient direction="r" />
       </div>
       <div className="flex flex-col gap-3 text-xl justify-center ">
         <h1 className="text-4xl text-primary-title font-bold">About</h1>

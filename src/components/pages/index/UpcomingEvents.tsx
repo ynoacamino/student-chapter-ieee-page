@@ -6,7 +6,7 @@ export default function UpcomingEvents() {
       <div className="w-full flex flex-col gap-6 items-center md:items-start">
         <header className="flex flex-col gap-1">
           <h1 className="font-bold text-4xl text-center lg:text-start text-primary-title">Upcoming Events</h1>
-          <h2 className="text-lg text-center lg:text-start">Stay tuner for events coming soon</h2>
+          <h2 className="text-xl text-center lg:text-start">Stay tuner for events coming soon</h2>
         </header>
         <main className="pl-4 flex gap-5 flex-col w-full">
           {
@@ -15,7 +15,7 @@ export default function UpcomingEvents() {
               <CalendarDays className="w-9 h-9" />
               <div className="">
                 <h3 className="text-xl font-bold text-primary-title">Event 1 Name</h3>
-                <h4 className="text-lg">Event 1 description</h4>
+                <h4 className="text-xl">Event 1 description</h4>
               </div>
             </div>
           ))
