@@ -8,16 +8,16 @@ import IEEETitle from '../logos/IEEETitle';
 
 const navLinks = [
   {
-    href: '/blog',
-    text: 'Blog',
-  },
-  {
     href: '/about',
     text: 'About',
   },
   {
     href: '/events',
     text: 'Events',
+  },
+  {
+    href: '/gallery',
+    text: 'Gallery',
   },
   {
     href: '/teams',
