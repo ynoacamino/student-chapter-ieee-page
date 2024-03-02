@@ -88,6 +88,7 @@
 
     /* Added colors */
     --primary-title: var(--web-orange-500);
+    --primary-title-hover: #fcac22;
 
     /* Default colors */
     --foreground: 222.2 84% 4.9%;

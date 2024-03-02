@@ -31,6 +31,7 @@ const config = {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
           title: 'var(--primary-title)',
+          'title-hover': 'var(--primary-title-hover)',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
