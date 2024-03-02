@@ -6,19 +6,6 @@ import { useEffect } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
 
-/* eslint-disable react/jsx-pascal-case */
-// function Box({ aspectRatio }: { aspectRatio: '1/1' | '16/9' | '9/16' }) {
-//   return (
-//     <div className={cn('w-full aspect-[1/1] bg-web-gray-100 rounded-md transition-shadow
-// hover:cursor-pointer hover:shadow-lg', {
-//       'aspect-[16/9]': aspectRatio === '16/9',
-//       'aspect-[9/16]': aspectRatio === '9/16',
-//       'aspect-[1/1]': aspectRatio === '1/1',
-//     })}
-//     />
-//   );
-// }
-
 const IMAGES = [
   [
     {
@@ -118,6 +105,7 @@ export default function Gallery() {
       gallery: '#gallery',
       children: 'a',
       pswpModule: () => import('photoswipe'),
+      preload: [2, 4],
     });
     lightbox.init();
 
@@ -131,10 +119,6 @@ export default function Gallery() {
       id="gallery"
     >
       <div className="flex flex-col gap-6">
-        {/* <Box aspectRatio="9/16" />
-        <Box aspectRatio="1/1" />
-        <Box aspectRatio="1/1" />
-        <Box aspectRatio="16/9" /> */}
         {
           IMAGES[0].map((image) => (
             <a
@@ -150,17 +134,13 @@ export default function Gallery() {
                 alt="Gallery image"
                 width={600}
                 height={600}
-                className="w-full h-auto rounded-md"
+                className="w-full h-auto rounded-md bg-web-gray-100"
               />
             </a>
           ))
         }
       </div>
       <div className="flex flex-col gap-6">
-        {/* <Box aspectRatio="16/9" />
-        <Box aspectRatio="9/16" />
-        <Box aspectRatio="1/1" />
-        <Box aspectRatio="1/1" /> */}
         {
           IMAGES[1].map((image) => (
             <a
@@ -176,17 +156,13 @@ export default function Gallery() {
                 alt="Gallery image"
                 width={600}
                 height={600}
-                className="w-full h-auto rounded-md"
+                className="w-full h-auto rounded-md bg-web-gray-100"
               />
             </a>
           ))
         }
       </div>
       <div className="flex flex-col gap-6 col-span-1 sm:col-span-2 md:col-span-1">
-        {/* <Box aspectRatio="1/1" />
-        <Box aspectRatio="16/9" />
-        <Box aspectRatio="1/1" />
-        <Box aspectRatio="9/16" /> */}
         {
           IMAGES[2].map((image) => (
             <a
@@ -202,7 +178,7 @@ export default function Gallery() {
                 alt="Gallery image"
                 width={600}
                 height={600}
-                className="w-full h-auto rounded-md"
+                className="w-full h-auto rounded-md bg-web-gray-100"
               />
             </a>
           ))

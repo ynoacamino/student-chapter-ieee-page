@@ -9,20 +9,20 @@ export default function Title() {
   const FIRST_WORD = 'STUDENT';
   const SECOND_WORD = 'BRANCH';
   const MILISECONDS = 80;
-  const TIMES = 12;
+  const TIMES = 10;
 
-  const [firstWord, setFirstWord] = useState('0'.repeat(FIRST_WORD.length));
-  const [secondWord, setSecondWord] = useState('0'.repeat(SECOND_WORD.length));
+  const [firstWord, setFirstWord] = useState(';&-1@:=');
+  const [secondWord, setSecondWord] = useState('.:/=3,');
 
   const words1 = useMemo(() => randomStrings({
     strEnd: FIRST_WORD,
-    strStart: '0'.repeat(FIRST_WORD.length),
+    strStart: '/-4!!)@',
     times: TIMES,
   }), []);
 
   const words2 = useMemo(() => randomStrings({
     strEnd: SECOND_WORD,
-    strStart: '0'.repeat(SECOND_WORD.length),
+    strStart: "8+2>.'",
     times: TIMES + FIRST_WORD.length,
   }), []);
 
