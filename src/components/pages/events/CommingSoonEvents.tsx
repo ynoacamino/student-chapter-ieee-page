@@ -1,3 +1,20 @@
+import Image from 'next/image';
+
+const IMAGES = [
+  {
+    src: '/images/gallery/img_8.webp',
+    alt: '',
+  },
+  {
+    src: '/images/gallery/img_10.webp',
+    alt: '',
+  },
+  {
+    src: '/images/gallery/img_12.webp',
+    alt: '',
+  },
+];
+
 export default function CommingSoonEvents() {
   return (
     <section className="w-full my-40 flex flex-col items-center gap-4">
@@ -9,10 +26,14 @@ export default function CommingSoonEvents() {
         we&apos;ve got you covered.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6">
-        {Array.from({ length: 3 }).map(() => (
-          <div
+        {IMAGES.map(({ src, alt }) => (
+          <Image
             key={crypto.randomUUID()}
             className="aspect-video md:aspect-square w-full rounded-lg bg-web-gray-100 object-cover"
+            src={src}
+            alt={alt}
+            width={600}
+            height={600}
           />
         ))}
       </div>

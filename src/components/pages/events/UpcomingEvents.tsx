@@ -1,4 +1,5 @@
 import { CalendarDays, Clock } from 'lucide-react';
+import Image from 'next/image';
 
 export default function UpcomingEvents() {
   const events = [
@@ -7,21 +8,21 @@ export default function UpcomingEvents() {
       description: 'Learn the basics of web development and build your first website.',
       date: 'March 20, 2023',
       hour: '10:00 AM - 12:00 PM',
-      img: null,
+      img: '/images/gallery/img_4.webp',
     },
     {
       name: 'Workshop: Introduction to Web Development',
       description: 'Learn the basics of web development and build your first website.',
       date: 'March 20, 2023',
       hour: '10:00 AM - 12:00 PM',
-      img: null,
+      img: '/images/gallery/img_6.webp',
     },
     {
       name: 'Workshop: Introduction to Web Development',
       description: 'Learn the basics of web development and build your first website.',
       date: 'March 20, 2023',
       hour: '10:00 AM - 12:00 PM',
-      img: null,
+      img: '/images/gallery/img_5.webp',
     },
   ];
 
@@ -36,27 +37,35 @@ export default function UpcomingEvents() {
       </p>
       <div className="flex flex-col gap-10">
         {
-          events.map((event) => (
+          events.map(({
+            date, description, hour, img, name,
+          }) => (
             <article key={crypto.randomUUID()} className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-8">
               <div className="flex flex-col gap-2">
                 <h2 className="font-bold text-2xl text-start text-primary-title">
-                  {event.name}
+                  {name}
                 </h2>
                 <p className="text-xl text-start mb-6">
-                  {event.description}
+                  {description}
                 </p>
                 <div className="flex flex-col gap-4 text-lg">
                   <div className="flex gap-4 items-center">
                     <CalendarDays className="w-8 h-8 " />
-                    <h4 className="">{event.date}</h4>
+                    <h4 className="">{date}</h4>
                   </div>
                   <div className="flex gap-4 items-center">
                     <Clock className="w-8 h-8" />
-                    <h4 className="">{event.hour}</h4>
+                    <h4 className="">{hour}</h4>
                   </div>
                 </div>
               </div>
-              <div className="w-full aspect-video bg-web-gray-100 rounded-lg" />
+              <Image
+                className="w-full aspect-video bg-web-gray-100 rounded-lg object-cover"
+                src={img}
+                alt=""
+                width={600}
+                height={600}
+              />
             </article>
           ))
         }

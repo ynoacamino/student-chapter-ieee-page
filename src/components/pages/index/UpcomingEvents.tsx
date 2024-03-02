@@ -1,4 +1,5 @@
 import { CalendarDays } from 'lucide-react';
+import Image from 'next/image';
 
 export default function UpcomingEvents() {
   return (
@@ -22,7 +23,13 @@ export default function UpcomingEvents() {
         }
         </main>
       </div>
-      <div className="w-full aspect-video bg-web-gray-100 rounded-lg" />
+      <Image
+        className="w-full aspect-video bg-web-gray-100 rounded-lg object-cover"
+        src="/images/gallery/img_9.webp"
+        alt=""
+        width={600}
+        height={600}
+      />
     </section>
   );
 }

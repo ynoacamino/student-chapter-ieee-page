@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -18,7 +19,13 @@ export default function About() {
           </Link>
         </p>
       </div>
-      <div className="w-full aspect-video rounded-lg bg-web-gray-100" />
+      <Image
+        className="w-full aspect-video rounded-lg bg-web-gray-100 object-cover"
+        alt=""
+        src="/images/gallery/img_7.webp"
+        width={600}
+        height={600}
+      />
     </section>
   );
 }
