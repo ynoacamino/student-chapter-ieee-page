@@ -1,6 +1,6 @@
 export default function VisionAndMision() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 text-center text-xl gap-x-20 my-40">
+    <section className="grid grid-cols-1 md:grid-cols-2 text-center text-xl gap-x-20 my-40" id="vision-and-mission">
       <article className="flex flex-col items-center gap-6">
         <h1 className="text-4xl text-primary-title font-bold">
           Vision

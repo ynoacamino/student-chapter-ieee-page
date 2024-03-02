@@ -1,6 +1,6 @@
 export default function Info() {
   return (
-    <section className="my-40 text-xl flex flex-col gap-12">
+    <section className="my-40 text-xl flex flex-col gap-12" id="more-info">
       <article className="flex flex-col gap-2">
         <h1 className="text-4xl text-primary-title font-bold">
           Marcamos la pauta para el futuro

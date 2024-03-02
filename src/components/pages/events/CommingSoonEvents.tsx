@@ -17,7 +17,7 @@ const IMAGES = [
 
 export default function CommingSoonEvents() {
   return (
-    <section className="w-full my-40 flex flex-col items-center gap-4">
+    <section className="w-full my-40 flex flex-col items-center gap-4" id="comming-soon-events">
       <h1 className="text-primary-title font-bold text-5xl text-center">
         Comming Soon Events
       </h1>

@@ -27,7 +27,7 @@ export default function UpcomingEvents() {
   ];
 
   return (
-    <section className="w-full my-40 flex flex-col items-center gap-4">
+    <section className="w-full my-40 flex flex-col items-center gap-4" id="upcoming-events">
       <h1 className="text-primary-title font-bold text-5xl text-center">
         Upcoming Events
       </h1>

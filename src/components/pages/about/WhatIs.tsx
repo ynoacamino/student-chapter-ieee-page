@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function WhatIs() {
   return (
-    <section className="w-full my-40 text-center flex flex-col gap-10 items-center text-xl">
+    <section className="w-full my-40 text-center flex flex-col gap-10 items-center text-xl" id="what-is">
       <h1 className="font-bold text-4xl text-primary-title">
         ¿Que es la IEEE Computer Society?
       </h1>
