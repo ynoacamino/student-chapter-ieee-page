@@ -1,33 +1,10 @@
 import ThemeToggle from '@/components/ui/themeToggle';
 import Link from '@/components/ui/link';
 import NextLink from 'next/link';
+import { navLinks } from '@/data/navLinks';
 import LanguageToggle from '../ui/languageToggle';
 import IEEETitle from '../logos/IEEETitle';
-
-// import './Header.css';
-
-const navLinks = [
-  {
-    href: '/',
-    text: 'Home',
-  },
-  {
-    href: '/about',
-    text: 'About',
-  },
-  {
-    href: '/events',
-    text: 'Events',
-  },
-  {
-    href: '/gallery',
-    text: 'Gallery',
-  },
-  {
-    href: '/teams',
-    text: 'Teams',
-  },
-];
+import NavBarMobile from './NavBarMobile';
 
 export default function Header() {
   return (
@@ -49,8 +26,11 @@ export default function Header() {
             }
             </div>
           </nav>
-          <ThemeToggle />
-          <LanguageToggle />
+          <div className="hidden md:flex gap-2 items-center">
+            <ThemeToggle />
+            <LanguageToggle />
+          </div>
+          <NavBarMobile />
         </div>
       </div>
 
