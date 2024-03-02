@@ -9,20 +9,20 @@ export default function Title() {
   const FIRST_WORD = 'STUDENT';
   const SECOND_WORD = 'BRANCH';
   const MILISECONDS = 80;
-  const TIMES = 8;
+  const TIMES = 12;
 
-  const [firstWord, setFirstWord] = useState(FIRST_WORD);
-  const [secondWord, setSecondWord] = useState(SECOND_WORD);
+  const [firstWord, setFirstWord] = useState('0'.repeat(FIRST_WORD.length));
+  const [secondWord, setSecondWord] = useState('0'.repeat(SECOND_WORD.length));
 
   const words1 = useMemo(() => randomStrings({
     strEnd: FIRST_WORD,
-    strStart: Array.from({ length: FIRST_WORD.length }, () => '0').join(''),
+    strStart: '0'.repeat(FIRST_WORD.length),
     times: TIMES,
   }), []);
 
   const words2 = useMemo(() => randomStrings({
     strEnd: SECOND_WORD,
-    strStart: Array.from({ length: SECOND_WORD.length }, () => '0').join(''),
+    strStart: '0'.repeat(SECOND_WORD.length),
     times: TIMES + FIRST_WORD.length,
   }), []);
 
@@ -43,7 +43,7 @@ export default function Title() {
     }, MILISECONDS);
 
     return () => clearInterval(interval);
-  }, [index1, index2, firstWord, secondWord]);
+  }, [index1, index2, firstWord, secondWord, words1, words2]);
 
   return (
     <div className="flex flex-col w-full my-40 max-w-4xl gap-4">
@@ -62,6 +62,7 @@ export default function Title() {
               </span>
             ))
           }
+          <span className="sr-only">{FIRST_WORD}</span>
         </span>
         <span className="flex">
           {
@@ -76,6 +77,7 @@ export default function Title() {
               </span>
             ))
           }
+          <span className="sr-only">{SECOND_WORD}</span>
         </span>
       </h1>
       <h2 className="text-3xl font-semibold">
