@@ -9,7 +9,7 @@ import NavBarMobile from './NavBarMobile';
 export default function Header() {
   return (
     <header id="header" className="w-full flex justify-center items-center text-primary sticky top-0 bg-background backdrop-blur-md z-10">
-      <div className="w-full max-w-6xl py-2 px-6 flex justify-between items-center">
+      <div className="w-full max-w-7xl py-2 px-6 flex justify-between items-center">
         <NextLink href="/">
           <IEEETitle className="w-40 h-auto" />
           <span className="sr-only">IEEE COMPUTER SOCIETY</span>

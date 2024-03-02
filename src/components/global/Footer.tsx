@@ -69,7 +69,7 @@ const LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="grid grid-cols-1 lg:grid-cols-3 w-full mb-10 mt-20 gap-x-10 gap-y-14 px-6">
+    <footer className="grid grid-cols-1 lg:grid-cols-3 w-full max-w-7xl mb-10 mt-20 gap-x-10 gap-y-14 px-6">
       <div className="w-full flex justify-center lg:justify-start">
         <IEEEOfficial className="w-full max-w-lg" />
       </div>
