@@ -114,7 +114,7 @@ const IMAGES = [
 
 export default function Gallery() {
   useEffect(() => {
-    let lightbox = new PhotoSwipeLightbox({
+    const lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a',
       pswpModule: () => import('photoswipe'),
@@ -123,7 +123,6 @@ export default function Gallery() {
 
     return () => {
       lightbox.destroy();
-      lightbox = null;
     };
   }, []);
   return (
