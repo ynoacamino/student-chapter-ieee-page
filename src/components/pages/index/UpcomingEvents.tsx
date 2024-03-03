@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function UpcomingEvents() {
   return (
-    <section className="w-full my-40 grid grid-cols-1 md:grid-cols-2 gap-y-10">
+    <section className="w-full my-40 grid grid-cols-1 md:grid-cols-2 gap-y-10" id="upcoming-events">
       <div className="w-full flex flex-col gap-6 items-center md:items-start">
         <header className="flex flex-col gap-1">
           <h1 className="font-bold text-4xl text-center lg:text-start text-primary-title">Upcoming Events</h1>

@@ -39,7 +39,7 @@ const IMAGES = [
 
 export default function About2() {
   return (
-    <section className="w-full grid grid-cols-1 gap-10 my-40">
+    <section className="w-full grid grid-cols-1 gap-10 my-40" id="about2">
       <div className="w-full overflow-hidden relative" id="sliderAbout">
         <div id="sliderAbout-track">
           {

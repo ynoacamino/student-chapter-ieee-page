@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-40">
+    <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-40" id="about">
       <div className="flex flex-col gap-3 text-xl justify-center ">
         <h1 className="text-4xl text-primary-title font-bold">About</h1>
         <p>
