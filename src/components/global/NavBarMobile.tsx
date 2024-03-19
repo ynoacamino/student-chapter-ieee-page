@@ -2,10 +2,9 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { navLinks } from '@/data/navLinks';
+import { NAVLINKS } from '@/data/navLinks';
 import { Button } from '@/components/ui/button';
 import Link from '@/components/ui/link';
-import LanguageToggle from '@/components/ui/languageToggle';
 import ThemeToggle from '@/components/ui/themeToggle';
 
 export default function NavBarMobile() {
@@ -31,7 +30,7 @@ export default function NavBarMobile() {
       >
         <div className="w-full max-w-40 flex flex-col gap-4">
           {
-          navLinks.map(({ href, text }) => (
+          NAVLINKS.map(({ href, text }) => (
             <Link
               className="text-xl w-full"
               href={href}
@@ -44,7 +43,6 @@ export default function NavBarMobile() {
         </div>
         <div className="flex items-center gap-4">
           <ThemeToggle />
-          <LanguageToggle />
         </div>
         <Button
           variant="ghost"

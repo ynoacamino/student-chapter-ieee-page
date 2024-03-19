@@ -60,17 +60,19 @@ export default function About2() {
         <Gradient direction="r" />
       </div>
       <div className="flex flex-col gap-3 text-xl justify-center ">
-        <h1 className="text-4xl text-primary-title font-bold">About</h1>
+        <h1 className="text-4xl text-primary-title font-bold">Sobre nosotros</h1>
         <p>
-          We are a chapter club of the Association for Computing Machinery organization.
-          Our goal is to expose passionate people.
+          El Capítulo Estudiantil de Ingeniería de Sistemas de la Universidad Nacional de
+          San Agustín es una comunidad comprometida con la excelencia académica y el avance
+          tecnológico.
         </p>
         <p>
-          We are a chapter club of the Association for Computing Machinery organization.
-          We are a chapter club of the Association for Computing Machinery
+          Nos dedicamos a explorar y desarrollar soluciones innovadoras en el vasto
+          campo de los sistemas,abarcando áreas como la ciberseguridad,
+          la inteligencia artificial, el análisis de datos y
           {' '}
-          <Link href="/" className="underline">
-            organization.
+          <Link href="/events" className="underline">
+            más.
           </Link>
         </p>
       </div>

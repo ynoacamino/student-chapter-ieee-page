@@ -10,18 +10,19 @@ export default function Avatars() {
           <Link
             href={`/teams/#${position}`}
             key={crypto.randomUUID()}
-            className="flex gap-4 w-full items-center"
+            className="flex gap-4 w-full max-w-[400px] items-center justify-self-center"
           >
             <Image
               src={avatar}
-              alt={position}
+              alt={position.es}
               width={150}
               height={150}
               className="rounded-full"
+              priority
             />
             <span className="flex flex-col">
               <h1 className="font-bold text-2xl text-primary-title">{`${name.split(' ')[0]} ${name.split(' ')[1]}`}</h1>
-              <p className="text-xl">{position}</p>
+              <p className="text-xl">{position.es}</p>
             </span>
           </Link>
         ))

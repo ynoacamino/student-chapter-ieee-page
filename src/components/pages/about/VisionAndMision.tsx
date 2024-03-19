@@ -3,7 +3,7 @@ export default function VisionAndMision() {
     <section className="grid grid-cols-1 md:grid-cols-2 text-center text-xl gap-x-20 my-40" id="vision-and-mission">
       <article className="flex flex-col items-center gap-6">
         <h1 className="text-4xl text-primary-title font-bold">
-          Vision
+          Visión
         </h1>
         <div className="w-full max-w-md flex flex-col gap-4">
           <p>
@@ -19,7 +19,7 @@ export default function VisionAndMision() {
       </article>
       <article className="flex flex-col items-center gap-6">
         <h1 className="text-4xl text-primary-title font-bold">
-          Mision
+          Misión
         </h1>
         <div className="w-full max-w-md flex flex-col gap-4">
           <p>

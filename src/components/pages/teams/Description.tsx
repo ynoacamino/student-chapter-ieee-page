@@ -13,7 +13,7 @@ export default function Description() {
           <div
             key={crypto.randomUUID()}
             className="grid grid-cols-1 md:grid-cols-3 gap-x-0 md:gap-x-6 gap-y-10 md:gap-y-0 w-full"
-            id={position}
+            id={position.en}
           >
             <Image
               src={photo}

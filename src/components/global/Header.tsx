@@ -1,8 +1,7 @@
 import ThemeToggle from '@/components/ui/themeToggle';
 import Link from '@/components/ui/link';
 import NextLink from 'next/link';
-import { navLinks } from '@/data/navLinks';
-import LanguageToggle from '../ui/languageToggle';
+import { NAVLINKS } from '@/data/navLinks';
 import IEEETitle from '../logos/IEEETitle';
 import NavBarMobile from './NavBarMobile';
 
@@ -18,7 +17,7 @@ export default function Header() {
           <nav className="flex items-center justify-start gap-10">
             <div className="md:flex gap-2 hidden font-semibold">
               {
-            navLinks.map(({ href, text }) => (
+            NAVLINKS.map(({ href, text }) => (
               <Link className="text-base" href={href} key={text}>
                 {text}
               </Link>
@@ -28,7 +27,6 @@ export default function Header() {
           </nav>
           <div className="hidden md:flex gap-2 items-center">
             <ThemeToggle />
-            <LanguageToggle />
           </div>
           <NavBarMobile />
         </div>

@@ -1,22 +1,28 @@
 import { CalendarDays } from 'lucide-react';
 import Image from 'next/image';
 
+import { UPCOMING_EVENTS } from '@/data/events';
+
 export default function UpcomingEvents() {
   return (
-    <section className="w-full my-40 grid grid-cols-1 md:grid-cols-2 gap-y-10" id="upcoming-events">
+    <section className="w-full my-40 grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4" id="upcoming-events">
       <div className="w-full flex flex-col gap-6 items-center md:items-start">
         <header className="flex flex-col gap-1">
-          <h1 className="font-bold text-4xl text-center lg:text-start text-primary-title">Upcoming Events</h1>
-          <h2 className="text-xl text-center lg:text-start">Stay tuner for events coming soon</h2>
+          <h1 className="font-bold text-4xl text-center md:text-start text-primary-title">
+            Eventos próximos
+          </h1>
+          <h2 className="text-xl text-center md:text-start">
+            Estén atentos a los eventos que se avecinan próximamente
+          </h2>
         </header>
-        <main className="pl-4 flex gap-5 flex-col w-full">
+        <main className="flex gap-6 flex-col w-full">
           {
-          Array.from({ length: 2 }).map(() => (
+          UPCOMING_EVENTS.slice(0, 2).map(({ title, description }) => (
             <div key={crypto.randomUUID()} className="flex items-center gap-4">
-              <CalendarDays className="w-9 h-9" />
+              <CalendarDays className="min-w-10 h-10" />
               <div className="">
-                <h3 className="text-xl font-bold text-primary-title">Event 1 Name</h3>
-                <h4 className="text-xl">Event 1 description</h4>
+                <h3 className="text-xl font-bold text-primary-title">{title}</h3>
+                <h4 className="text-lg pr-12">{description}</h4>
               </div>
             </div>
           ))

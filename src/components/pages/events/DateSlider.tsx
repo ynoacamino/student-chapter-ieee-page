@@ -28,7 +28,7 @@ export default function DateSalider({ duration, dates }: { duration: number, dat
         >
           {
             event ? (
-              <div className="w-full rounded-lg bg-primary-title aspect-square text-3xl p-4 text-background flex flex-col overflow-hidden">
+              <div className="w-full rounded-lg bg-primary-title aspect-square text-3xl py-4 p-3 text-background flex flex-col overflow-hidden">
                 <span>
                   {day}
                 </span>
