@@ -31,13 +31,15 @@ export default function NavBarMobile() {
         <div className="w-full max-w-40 flex flex-col gap-4">
           {
           NAVLINKS.map(({ href, text }) => (
-            <Link
-              className="text-xl w-full"
-              href={href}
-              key={text}
-            >
-              {text}
-            </Link>
+            <button type="button" onClick={handleClick} key={text}>
+              <Link
+                className="text-xl w-full"
+                href={href}
+
+              >
+                {text}
+              </Link>
+            </button>
           ))
         }
         </div>
