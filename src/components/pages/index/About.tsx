@@ -24,7 +24,7 @@ export default function About() {
       <Image
         className="w-full aspect-video rounded-lg bg-web-gray-100 object-cover"
         alt=""
-        src="/images/gallery/img_7.webp"
+        src="https://res.cloudinary.com/dazt6g3o1/image/upload/v1710883836/bejo8x3wc3qr1pcpxr8m.jpg"
         width={600}
         height={600}
       />

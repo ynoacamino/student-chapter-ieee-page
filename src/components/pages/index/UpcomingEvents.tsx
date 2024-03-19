@@ -31,7 +31,7 @@ export default function UpcomingEvents() {
       </div>
       <Image
         className="w-full aspect-video bg-web-gray-100 rounded-lg object-cover"
-        src="/images/gallery/img_9.webp"
+        src="https://res.cloudinary.com/dazt6g3o1/image/upload/v1710884084/xqhmnbfvo6dmphvfpb7h.jpg"
         alt=""
         width={600}
         height={600}
