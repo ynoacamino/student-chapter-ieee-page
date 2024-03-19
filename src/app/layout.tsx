@@ -7,6 +7,7 @@ import ThemeProvider from '@/components/providers/ThemeProvider';
 
 import Header from '@/components/global/Header';
 import Footer from '@/components/global/Footer';
+import ProgressBarProvider from '@/components/providers/ProgressBarProvider';
 
 export const metadata: Metadata = {
   title: 'IEEE UNSA | Student Chapter',
@@ -30,13 +31,15 @@ export default function RootLayout({
           open_sans.className,
         )}
       >
-        <ThemeProvider>
-          <Header />
-          <main className="flex flex-col items-center w-full max-w-6xl px-6 ">
-            {children}
-          </main>
-          <Footer />
-        </ThemeProvider>
+        <ProgressBarProvider>
+          <ThemeProvider>
+            <Header />
+            <main className="flex flex-col items-center w-full max-w-6xl px-6 ">
+              {children}
+            </main>
+            <Footer />
+          </ThemeProvider>
+        </ProgressBarProvider>
       </body>
     </html>
   );
