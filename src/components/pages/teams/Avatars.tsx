@@ -8,7 +8,7 @@ export default function Avatars() {
       {
         TEAM.map(({ avatar, position, name }) => (
           <Link
-            href={`/teams/#${position}`}
+            href={`/teams/#${position.en}`}
             key={crypto.randomUUID()}
             className="flex gap-4 w-full max-w-[400px] items-center justify-self-center"
           >
