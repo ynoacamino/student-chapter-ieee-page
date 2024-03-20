@@ -28,16 +28,16 @@ export default function Description() {
                 <p className="text-xl">{description}</p>
               </span>
               <span className="flex gap-2 text-lg flex-wrap">
-                <Link href="/" className="flex gap-4 items-center">
-                  <span className="flex-1">Github</span>
+                <Link href="/" className="flex gap-4 items-center w-40">
+                  <span className="flex-1 text-center">Github</span>
                   <Github size={24} />
                 </Link>
-                <Link href="/" className="flex gap-4 items-center">
-                  <span className="flex-1">Instagram</span>
+                <Link href="/" className="flex gap-4 items-center w-40">
+                  <span className="flex-1 text-center">Instagram</span>
                   <Instagram size={24} />
                 </Link>
-                <Link href="/" className="flex gap-4 items-center">
-                  <span className="flex-1">Linkedin</span>
+                <Link href="/" className="flex gap-4 items-center w-40">
+                  <span className="flex-1 text-center">Linkedin</span>
                   <Linkedin size={24} />
                 </Link>
               </span>
