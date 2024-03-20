@@ -11,7 +11,41 @@ import ProgressBarProvider from '@/components/providers/ProgressBarProvider';
 
 export const metadata: Metadata = {
   title: 'IEEE UNSA | Student Chapter',
-  description: 'IEEE UNSA Student Chapter official website.',
+  description: 'Pagina web oficial del capitulo estudiantil de la IEEE de la Universidad Nacional de San Agustin.',
+  authors: [{ name: 'Yenaro Joel Noa Camino', url: 'https://github.com/ynoacamino' }],
+  creator: 'Yenaro Joel Noa Camino',
+  publisher: 'IEEE UNSA',
+  openGraph: {
+    type: 'website',
+    locale: 'es_ES',
+    url: 'https://ieee-ynoacamino.vercel.app/',
+    title: 'IEEE UNSA | Student Chapter',
+    description: 'Pagina web oficial del capitulo estudiantil de la IEEE de la Universidad Nacional de San Agustin.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dux0sb99g/image/upload/v1710895172/porqqrmrf3l1xyhhjsu2.webp ',
+        width: 600,
+        height: 407,
+        alt: 'IEEE UNSA | Student Chapter',
+      },
+    ],
+    siteName: 'IEEE UNSA',
+  },
+  twitter: {
+    creator: '@ynoacamino',
+    site: 'https://github.com/ynoacamino',
+    description: 'Pagina web oficial del capitulo estudiantil de la IEEE de la Universidad Nacional de San Agustin.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dux0sb99g/image/upload/v1710895172/porqqrmrf3l1xyhhjsu2.webp ',
+        width: 600,
+        height: 407,
+        alt: 'IEEE UNSA | Student Chapter',
+      },
+    ],
+    title: 'IEEE UNSA | Student Chapter',
+  },
+  metadataBase: new URL('https://ieee-ynoacamino.vercel.app/'),
 };
 
 const open_sans = Open_Sans({
