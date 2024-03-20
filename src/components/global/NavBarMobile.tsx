@@ -5,7 +5,7 @@ import { Menu, X } from 'lucide-react';
 import { NAVLINKS } from '@/data/navLinks';
 import { Button } from '@/components/ui/button';
 import Link from '@/components/ui/link';
-import ThemeToggle from '@/components/ui/themeToggle';
+import ThemeToggleMobile from '@/components/ui/themeToogleMobile';
 
 export default function NavBarMobile() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,18 +43,16 @@ export default function NavBarMobile() {
           ))
         }
         </div>
-        <div className="flex items-center gap-4">
-          <ThemeToggle />
-        </div>
+        <ThemeToggleMobile />
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="md:hidden w-14 h-14 mt-10"
           type="button"
           aria-label="mas opciones"
           onClick={handleClick}
         >
-          <X />
+          <X className="w-16 h-16 stroke-1" />
         </Button>
       </nav>
     </>
