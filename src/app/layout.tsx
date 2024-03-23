@@ -61,7 +61,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'bg-background flex flex-col justify-start items-center text-primary overflow-y-scroll',
+          'bg-background flex flex-col justify-start items-center text-primary',
           open_sans.className,
         )}
       >
