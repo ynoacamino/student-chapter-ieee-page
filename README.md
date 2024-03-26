@@ -5,7 +5,7 @@
 ## 🚀 Descripción
 
 Esta página fue desarrollada para el [concurso de creación de la pagina web](https://github.com/ValentinaCham/ieee-cs-unsa-material) del capitulo estudiantil de la IEEE.
-([🔗 Ver mas proyectos](https://portafolio-lovat-five.vercel.app/))
+([🔗 Ver mas proyectos](https://portafolio-ynoacamino.vercel.app/))
 
 ## 🌐 Demo
 
