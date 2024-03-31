@@ -122,6 +122,7 @@ const config = {
         'palete-teal': 'hsl(var(--palete-teal))',
         'palete-blue': 'hsl(var(--palete-blue))',
         'palete-cyan': 'hsl(var(--palete-cyan))',
+        section: 'var(--section)',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -144,6 +145,12 @@ const config = {
       },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
+      },
+      backgroundImage: {
+        'gradient-l': 'conic-gradient(from 90deg at -10% 100%, #bcc1cd 0deg, #bcc1cd 90deg, #fff 1turn)',
+        'gradient-r': 'conic-gradient(from -90deg at 110% 100%, #fff 0deg, #ebecf0 90deg, #ebecf0 1turn)',
+        'gradient-l-dark': 'conic-gradient(from 90deg at -10% 100%, #282b35 0deg, #282b35 90deg, #282b35 1turn)',
+        'gradient-r-dark': 'conic-gradient(from -90deg at 110% 100%, #23272f 0deg, #23272f 90deg, #23272f 1turn)',
       },
     },
   },

@@ -24,7 +24,7 @@ export default function Gallery() {
   }, []);
   return (
     <section
-      className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-0 sm:gap-x-6 mb-40 gap-y-6 pswp-gallery"
+      className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-0 sm:gap-x-6 mb-40 gap-y-6 pswp-gallery max-w-6xl"
       id="gallery"
     >
       <div className="flex flex-col gap-6">

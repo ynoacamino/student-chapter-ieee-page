@@ -2,23 +2,25 @@ import { CalendarDays, Clock } from 'lucide-react';
 import Image from 'next/image';
 
 import { UPCOMING_EVENTS } from '@/data/events';
+import { Section } from '@/components/ui/section';
 
 export default function UpcomingEvents() {
   return (
-    <section className="w-full my-40 flex flex-col items-center gap-4" id="upcoming-events">
-      <h1 className="text-primary-title font-bold text-5xl text-center">
-        Eventos próximos
-      </h1>
-      <p className="text-xl text-center w-full max-w-2xl mb-24">
-        Únanse a uno de nuestros próximos eventos. Desde talleres hasta conferencias,
-        nosotros te cubrimos.
-      </p>
-      <div className="flex flex-col gap-x-10 gap-y-16 md:gap-y-10">
-        {
+    <Section bgDirection="l" id="upcoming-events">
+      <section className="w-full flex flex-col items-center gap-4 max-w-6xl">
+        <h1 className="text-primary-title font-bold text-5xl text-center">
+          Eventos próximos
+        </h1>
+        <p className="text-xl text-center w-full max-w-2xl mb-24">
+          Únanse a uno de nuestros próximos eventos. Desde talleres hasta conferencias,
+          nosotros te cubrimos.
+        </p>
+        <div className="flex flex-col gap-x-10 gap-y-16 md:gap-y-10">
+          {
           UPCOMING_EVENTS.slice(0, 4).map(({
             date, description, title, poster, time,
           }) => (
-            <article key={crypto.randomUUID()} className="w-full grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-8">
+            <article key={crypto.randomUUID()} className="w-full grid grid-cols-1 md:grid-cols-3 gap-y-6 gap-x-8">
               <div className="flex flex-col gap-2 col-span-1 md:col-span-2 max-w-2xl">
                 <h2 className="font-bold text-2xl text-start text-primary-title">
                   {title}
@@ -55,7 +57,8 @@ export default function UpcomingEvents() {
             </article>
           ))
         }
-      </div>
-    </section>
+        </div>
+      </section>
+    </Section>
   );
 }

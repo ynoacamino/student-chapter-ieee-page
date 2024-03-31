@@ -68,7 +68,7 @@ export default function RootLayout({
         <ProgressBarProvider>
           <ThemeProvider>
             <Header />
-            <main className="flex flex-col items-center w-full max-w-6xl px-6 ">
+            <main className="flex flex-col items-center w-full ">
               {children}
             </main>
             <Footer />

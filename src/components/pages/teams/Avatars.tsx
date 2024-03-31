@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import { TEAM } from '@/data/team';
 import Link from 'next/link';
+import { Section } from '@/components/ui/section';
 
 export default function Avatars() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 my-40">
-      {
+    <Section bgDirection="l">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 max-w-6xl">
+        {
         TEAM.map(({ avatar, position, name }) => (
           <Link
             href={`/teams/#${position.en}`}
@@ -27,6 +29,7 @@ export default function Avatars() {
           </Link>
         ))
       }
-    </section>
+      </div>
+    </Section>
   );
 }

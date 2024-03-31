@@ -1,6 +1,7 @@
 import Gradient from '@/components/ui/gradient';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Section } from '@/components/ui/section';
 
 const IMAGES = [
   {
@@ -39,10 +40,11 @@ const IMAGES = [
 
 export default function About2() {
   return (
-    <section className="w-full grid grid-cols-1 gap-10 my-40" id="about2">
-      <div className="w-full overflow-hidden relative" id="sliderAbout">
-        <div id="sliderAbout-track">
-          {
+    <Section id="about2" bgDirection="r" className="">
+      <div className="w-full flex flex-col items-center justify-start gap-10">
+        <div className="w-full overflow-hidden relative" id="sliderAbout">
+          <div id="sliderAbout-track">
+            {
             IMAGES.map(({ alt, src }) => (
               <div key={crypto.randomUUID()} className="w-[40rem] pr-4">
                 <Image
@@ -55,27 +57,28 @@ export default function About2() {
               </div>
             ))
           }
+          </div>
+          <Gradient direction="l" />
+          <Gradient direction="r" />
         </div>
-        <Gradient direction="l" />
-        <Gradient direction="r" />
+        <div className="flex flex-col gap-3 text-xl justify-center max-w-6xl">
+          <h1 className="text-4xl text-primary-title font-bold">Sobre nosotros</h1>
+          <p>
+            El Capítulo Estudiantil de Ingeniería de Sistemas de la Universidad Nacional de
+            San Agustín es una comunidad comprometida con la excelencia académica y el avance
+            tecnológico.
+          </p>
+          <p>
+            Nos dedicamos a explorar y desarrollar soluciones innovadoras en el vasto
+            campo de los sistemas,abarcando áreas como la ciberseguridad,
+            la inteligencia artificial, el análisis de datos y
+            {' '}
+            <Link href="/events" className="underline">
+              más.
+            </Link>
+          </p>
+        </div>
       </div>
-      <div className="flex flex-col gap-3 text-xl justify-center ">
-        <h1 className="text-4xl text-primary-title font-bold">Sobre nosotros</h1>
-        <p>
-          El Capítulo Estudiantil de Ingeniería de Sistemas de la Universidad Nacional de
-          San Agustín es una comunidad comprometida con la excelencia académica y el avance
-          tecnológico.
-        </p>
-        <p>
-          Nos dedicamos a explorar y desarrollar soluciones innovadoras en el vasto
-          campo de los sistemas,abarcando áreas como la ciberseguridad,
-          la inteligencia artificial, el análisis de datos y
-          {' '}
-          <Link href="/events" className="underline">
-            más.
-          </Link>
-        </p>
-      </div>
-    </section>
+    </Section>
   );
 }

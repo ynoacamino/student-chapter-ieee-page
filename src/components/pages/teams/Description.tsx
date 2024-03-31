@@ -2,11 +2,13 @@ import Image from 'next/image';
 import { TEAM } from '@/data/team';
 import { Github, Instagram, Linkedin } from 'lucide-react';
 import Link from '@/components/ui/link';
+import { Section } from '@/components/ui/section';
 
 export default function Description() {
   return (
-    <section className="w-full my-40 flex flex-col gap-10">
-      {
+    <Section bgDirection="r">
+      <div className="w-full flex flex-col gap-10 max-w-6xl">
+        {
         TEAM.map(({
           description, name, photo, position,
         }) => (
@@ -45,6 +47,7 @@ export default function Description() {
           </div>
         ))
       }
-    </section>
+      </div>
+    </Section>
   );
 }
