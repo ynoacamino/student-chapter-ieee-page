@@ -3,7 +3,7 @@ import { Section } from '@/components/ui/section';
 export default function Info() {
   return (
     <Section bgDirection="l" id="more-info">
-      <section className="text-xl flex flex-col gap-20 max-w-6xl">
+      <div className="text-xl flex flex-col gap-20 max-w-6xl">
         <article className="flex flex-col gap-2">
           <h1 className="text-4xl text-primary-title font-bold">
             Marcamos la pauta para el futuro
@@ -27,7 +27,7 @@ export default function Info() {
             apoyo y avance de las oportunidades tecnológicas que benefician a la humanidad.
           </p>
         </article>
-      </section>
+      </div>
     </Section>
   );
 }

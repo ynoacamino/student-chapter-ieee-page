@@ -12,7 +12,7 @@ export default function UpcomingEvents() {
 
   return (
     <Section bgDirection="l" id="upcoming-events">
-      <section className="w-full flex flex-col items-center gap-4 max-w-6xl">
+      <div className="w-full flex flex-col items-center gap-4 max-w-6xl">
         <h1 className="text-primary-title font-bold text-5xl text-center">
           Eventos próximos
         </h1>
@@ -73,7 +73,7 @@ export default function UpcomingEvents() {
           ))
         }
         </div>
-      </section>
+      </div>
     </Section>
   );
 }

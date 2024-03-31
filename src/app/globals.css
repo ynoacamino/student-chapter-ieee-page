@@ -110,7 +110,7 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.5rem;
-    --section: rgba(35, 39, 47, .1);
+    --section: rgba(35, 39, 47, 0.22);
   }
  
   .dark {
