@@ -1,4 +1,4 @@
-interface EventIEEE {
+export interface EventIEEE {
   title: string;
   date: string[];
   link?: string;
@@ -8,6 +8,8 @@ interface EventIEEE {
   poster: {
     full: string;
     thumbnail: string;
+    width: number;
+    height: number;
   };
 }
 
@@ -20,6 +22,8 @@ export const UPCOMING_EVENTS: EventIEEE[] = [
     poster: {
       full: '/images/poster/25122023-EnvenenamientoParametros.png',
       thumbnail: '/images/poster/25122023-EnvenenamientoParametros.webp',
+      width: 1080,
+      height: 1080,
     },
     link: 'meet.google.com/abc-xyz-123',
     time: '3:00 PM',
@@ -32,6 +36,8 @@ export const UPCOMING_EVENTS: EventIEEE[] = [
     poster: {
       full: '/images/poster/22012023-AWS.png',
       thumbnail: '/images/poster/22012023-AWS.webp',
+      width: 1080,
+      height: 1080,
     },
     link: 'meet.google.com/abc-xyz-123',
     time: '8:30 PM',
@@ -44,6 +50,8 @@ export const UPCOMING_EVENTS: EventIEEE[] = [
     poster: {
       full: '/images/poster/22012024-IBMCloud.png',
       thumbnail: '/images/poster/22012024-IBMCloud.webp',
+      width: 1080,
+      height: 1080,
     },
     link: 'meet.google.com/abc-xyz-123',
     time: '11:00 AM',
@@ -56,6 +64,8 @@ export const UPCOMING_EVENTS: EventIEEE[] = [
     poster: {
       full: '/images/poster/DesarrolloMovil.png',
       thumbnail: '/images/poster/DesarrolloMovil.webp',
+      width: 2000,
+      height: 2000,
     },
     link: '',
   },
@@ -67,6 +77,8 @@ export const UPCOMING_EVENTS: EventIEEE[] = [
     poster: {
       full: '/images/poster/24022024-AnalisisDatos.png',
       thumbnail: '/images/poster/24022024-AnalisisDatos.webp',
+      width: 1080,
+      height: 1080,
     },
     link: 'meet.google.com/abc-xyz-123',
     time: '6:00 PM - 7:00 PM',

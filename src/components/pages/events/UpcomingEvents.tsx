@@ -1,10 +1,15 @@
+'use client';
+
 import { CalendarDays, Clock } from 'lucide-react';
 import Image from 'next/image';
 
 import { UPCOMING_EVENTS } from '@/data/events';
 import { Section } from '@/components/ui/section';
+import { useGallery } from '@/lib/hooks';
 
 export default function UpcomingEvents() {
+  useGallery({ id: 'UpcomingEvents' });
+
   return (
     <Section bgDirection="l" id="upcoming-events">
       <section className="w-full flex flex-col items-center gap-4 max-w-6xl">
@@ -15,7 +20,7 @@ export default function UpcomingEvents() {
           Únanse a uno de nuestros próximos eventos. Desde talleres hasta conferencias,
           nosotros te cubrimos.
         </p>
-        <div className="flex flex-col gap-x-10 gap-y-16 md:gap-y-10">
+        <div className="flex flex-col gap-x-10 gap-y-16 md:gap-y-10" id="UpcomingEvents">
           {
           UPCOMING_EVENTS.slice(0, 4).map(({
             date, description, title, poster, time,
@@ -47,13 +52,23 @@ export default function UpcomingEvents() {
                   }
                 </div>
               </div>
-              <Image
-                className="w-full aspect-square bg-web-gray-100 rounded-lg object-cover"
-                src={poster.thumbnail}
-                alt=""
-                width={600}
-                height={600}
-              />
+              <a
+                href={poster.full}
+                data-pswp-width={poster.width}
+                data-pswp-height={poster.height}
+                key={crypto.randomUUID()}
+                target="_blank"
+                rel="noreferrer"
+                className=""
+              >
+                <Image
+                  className="w-full aspect-square bg-web-gray-100 rounded-lg object-cover"
+                  src={poster.thumbnail}
+                  alt={title}
+                  width={600}
+                  height={600}
+                />
+              </a>
             </article>
           ))
         }

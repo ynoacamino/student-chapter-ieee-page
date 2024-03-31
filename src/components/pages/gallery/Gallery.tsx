@@ -1,27 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect } from 'react';
 
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
 
 import { IMAGES } from '@/data/gallery';
+import { useGallery } from '@/lib/hooks';
 
 export default function Gallery() {
-  useEffect(() => {
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: '#gallery',
-      children: 'a',
-      pswpModule: () => import('photoswipe'),
-      preload: [2, 4],
-    });
-    lightbox.init();
-
-    return () => {
-      lightbox.destroy();
-    };
-  }, []);
+  useGallery({ id: 'gallery' });
   return (
     <section
       className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-0 sm:gap-x-6 mb-40 gap-y-6 pswp-gallery max-w-6xl"

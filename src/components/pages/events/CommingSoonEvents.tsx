@@ -1,7 +1,6 @@
-import Image from 'next/image';
-
 import { FUTURE_EVENTS } from '@/data/events';
 import { Section } from '@/components/ui/section';
+import { Photos } from '@/components/ui/Photos';
 
 export default function CommingSoonEvents() {
   return (
@@ -13,18 +12,7 @@ export default function CommingSoonEvents() {
         <p className="text-xl text-center w-full max-w-2xl mb-24">
           Estén atentos a los eventos que se avecinan próximamente
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6">
-          {FUTURE_EVENTS.slice(2, 5).map(({ poster, title }) => (
-            <Image
-              key={crypto.randomUUID()}
-              className="aspect-square w-full rounded-lg bg-web-gray-100 object-cover"
-              src={poster.thumbnail}
-              alt={title}
-              width={600}
-              height={600}
-            />
-          ))}
-        </div>
+        <Photos PHOTOS={FUTURE_EVENTS.slice(2, 5)} id="CommingSoonEvents" />
       </section>
     </Section>
   );
