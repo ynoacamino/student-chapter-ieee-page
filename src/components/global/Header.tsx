@@ -4,6 +4,8 @@ import IEEETitle from '../logos/IEEETitle';
 import NavBarMobile from './NavBarMobile';
 import Links from './Links';
 
+import './Header.css';
+
 export default function Header() {
   return (
     <header id="header" className="w-full flex justify-center items-center text-primary sticky top-0 bg-background backdrop-blur-md z-10">
