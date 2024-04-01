@@ -3,6 +3,8 @@
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import { useEffect } from 'react';
 
+import 'photoswipe/style.css';
+
 export const useGallery = ({ id }: { id: string }) => {
   useEffect(() => {
     const lightbox = new PhotoSwipeLightbox({

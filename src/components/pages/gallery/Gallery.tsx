@@ -2,8 +2,6 @@
 
 import Image from 'next/image';
 
-import 'photoswipe/style.css';
-
 import { IMAGES } from '@/data/gallery';
 import { useGallery } from '@/lib/hooks';
 
