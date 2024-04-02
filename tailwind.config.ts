@@ -152,6 +152,12 @@ const config = {
         'gradient-l-dark': 'conic-gradient(from 90deg at -10% 100%, #282b35 0deg, #282b35 90deg, #282b35 1turn)',
         'gradient-r-dark': 'conic-gradient(from -90deg at 110% 100%, #23272f 0deg, #23272f 90deg, #23272f 1turn)',
       },
+      gridTemplateColumns: {
+        25: 'repeat(25, minmax(0, 1fr))',
+      },
+      gridColumn: {
+        'span-16/16': 'span 16 / span 16',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
