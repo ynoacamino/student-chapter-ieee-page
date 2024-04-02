@@ -6,7 +6,7 @@ import { Section } from '@/components/ui/section';
 
 export default function Description() {
   return (
-    <Section bgDirection="r">
+    <Section bgDirection="l">
       <div className="w-full flex flex-col gap-10 max-w-6xl">
         {
         TEAM.map(({

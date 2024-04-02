@@ -1,35 +1,44 @@
+'use client';
+
 import Image from 'next/image';
 import { TEAM } from '@/data/team';
 import Link from 'next/link';
-import { Section } from '@/components/ui/section';
+import { motion } from 'framer-motion';
 
 export default function Avatars() {
   return (
-    <Section bgDirection="l">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 max-w-6xl">
-        {
-        TEAM.map(({ avatar, position, name }) => (
-          <Link
-            href={`/teams/#${position.en}`}
+    <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 max-w-6xl mb-24">
+      {
+        TEAM.map(({ avatar, position, name }, i) => (
+          <motion.div
             key={crypto.randomUUID()}
-            className="flex gap-4 w-full max-w-[400px] items-center justify-self-center"
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: i * 0.25, type: 'spring', stiffness: 300, damping: 24,
+            }}
+            className="w-full max-w-[400px] justify-self-center"
           >
-            <Image
-              src={avatar}
-              alt={position.es}
-              width={150}
-              height={150}
-              className="rounded-full"
-              priority
-            />
-            <span className="flex flex-col">
-              <h1 className="font-bold text-2xl text-primary-title">{`${name.split(' ')[0]} ${name.split(' ')[1]}`}</h1>
-              <p className="text-xl">{position.es}</p>
-            </span>
-          </Link>
+            <Link
+              href={`/teams/#${position.en}`}
+              className="flex gap-4 w-full items-center "
+            >
+              <Image
+                src={avatar}
+                alt={position.es}
+                width={150}
+                height={150}
+                className="rounded-full"
+                priority
+              />
+              <span className="flex flex-col">
+                <h1 className="font-bold text-2xl text-primary-title">{`${name.split(' ')[0]} ${name.split(' ')[1]}`}</h1>
+                <p className="text-xl">{position.es}</p>
+              </span>
+            </Link>
+          </motion.div>
         ))
       }
-      </div>
-    </Section>
+    </div>
   );
 }
