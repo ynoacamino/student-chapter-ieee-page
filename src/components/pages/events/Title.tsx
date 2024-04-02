@@ -1,13 +1,11 @@
-export default function Title() {
+import { Title } from '@/components/ui/title';
+
+export default function EventsTitle() {
   return (
-    <div className="my-40">
-      <h1 className="text-6xl text-primary-title font-extrabold text-center uppercase">
-        Eventos
-      </h1>
-      <p className="text-xl text-center mt-5 w-full max-w-xl">
-        ¡Explora los fascinantes eventos que hemos llevado a cabo y los
-        que están por venir!
-      </p>
-    </div>
+    <Title
+      title="Eventos"
+      subtitle="¡Explora los fascinantes eventos que hemos llevado a cabo y los
+      que están por venir!"
+    />
   );
 }
