@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 export default function Avatars() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8 max-w-6xl mb-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4 max-w-6xl mb-24">
       {
         TEAM.map(({ avatar, position, name }, i) => (
           <motion.div
@@ -17,11 +17,11 @@ export default function Avatars() {
             transition={{
               delay: i * 0.25, type: 'spring', stiffness: 300, damping: 24,
             }}
-            className="w-full max-w-[400px] justify-self-center"
+            className="w-full max-w-[460px] justify-self-center"
           >
             <Link
               href={`/teams/#${position.en}`}
-              className="flex gap-4 w-full items-center "
+              className="flex gap-4 w-full items-center hover:bg-accent transition-colors p-4 rounded-lg duration-150"
             >
               <Image
                 src={avatar}
