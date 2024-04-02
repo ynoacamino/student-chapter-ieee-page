@@ -10,7 +10,8 @@
     --web-orange-200: #ffea85;
     --web-orange-300: #ffd946;
     --web-orange-400: #ffc61b;
-    --web-orange-500: #ffa300; /* DEFAULT FFF3E0 */
+    --web-orange-500: #ffa300;
+    --web-orange-500-dark: #f59b01; /* DEFAULT FFF3E0 */
     --web-orange-600: #e27a00;
     --web-orange-700: #bb5402;
     --web-orange-800: #984108;
@@ -87,7 +88,7 @@
     --popover-foreground: 222.2 84% 4.9%;
 
     /* Added colors */
-    --primary-title: var(--web-orange-500);
+    --primary-title: var(--web-orange-500-dark);
     --primary-title-hover: #fcac22;
 
     /* Default colors */
