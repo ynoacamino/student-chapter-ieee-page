@@ -4,7 +4,7 @@ export default function VisionAndMision() {
   return (
     <Section bgDirection="r" id="vision-and-mission">
       <div className="grid grid-cols-1 md:grid-cols-2 text-center text-xl gap-x-20 gap-y-20 max-w-6xl">
-        <article className="flex flex-col items-center gap-6">
+        <article className="flex flex-col items-center gap-6" id="animation-text-l">
           <h1 className="text-4xl text-primary-title font-bold">
             Visión
           </h1>
@@ -21,7 +21,7 @@ export default function VisionAndMision() {
             </p>
           </div>
         </article>
-        <article className="flex flex-col items-center gap-6">
+        <article className="flex flex-col items-center gap-6" id="animation-text-r">
           <h1 className="text-4xl text-primary-title font-bold">
             Misión
           </h1>

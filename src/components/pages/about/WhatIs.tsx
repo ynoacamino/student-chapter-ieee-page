@@ -4,7 +4,10 @@ import Image from 'next/image';
 export default function WhatIs() {
   return (
     <Section bgDirection="l" id="what-is">
-      <div className="w-full text-center flex flex-col gap-10 items-center text-xl max-w-6xl">
+      <div
+        className="w-full text-center flex flex-col gap-10 items-center text-xl max-w-6xl"
+        id="animation-text-l"
+      >
         <h1 className="font-bold text-4xl text-primary-title">
           ¿Que es la IEEE Computer Society?
         </h1>
@@ -20,6 +23,7 @@ export default function WhatIs() {
           width={700}
           height={500}
           className="w-full h-auto rounded-lg shadow-lg my-4"
+          id="animation-image-r"
         />
         <p className="w-full max-w-3xl">
           A través de conferencias, publicaciones y programas, y reuniendo a los líderes de la

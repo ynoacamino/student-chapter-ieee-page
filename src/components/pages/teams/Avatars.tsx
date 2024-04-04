@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 export default function Avatars() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4 max-w-6xl mb-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4 max-w-6xl mb-24 px-3">
       {
         TEAM.map(({ avatar, position, name }, i) => (
           <motion.div

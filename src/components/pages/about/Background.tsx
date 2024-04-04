@@ -30,10 +30,10 @@ export default function Background() {
   }));
 
   return (
-    <div className="flex flex-col gap-4 max-w-4xl mb-24">
-      <div className="grid grid-cols-25 gap-4">
+    <div className="flex flex-col gap-4 max-w-4xl mb-24 w-full px-6 overflow-hidden">
+      <div className="grid md:grid-cols-25 gap-4 w-full">
         <motion.img
-          className="aspect-square col-span-9 object-cover w-full h-full rounded-lg"
+          className="aspect-square md:col-span-9 object-cover w-full h-full rounded-lg hidden md:flex"
           src={IMAGES[0].src}
           alt={IMAGES[0].alt}
           width={600}
@@ -53,9 +53,9 @@ export default function Background() {
           transition={transitions[0]}
         />
       </div>
-      <div className="grid grid-cols-25 gap-4">
+      <div className="grid md:grid-cols-25 gap-4 w-full">
         <motion.img
-          className="aspect-video h-auto col-span-16/16 w-full rounded-lg"
+          className="aspect-video h-auto md:col-span-16/16 w-full rounded-lg"
           src={IMAGES[3].src}
           alt={IMAGES[3].alt}
           width={600}
@@ -65,7 +65,7 @@ export default function Background() {
           transition={transitions[1]}
         />
         <motion.img
-          className="aspect-square h-full col-span-9 object-cover rounded-lg"
+          className="aspect-square h-full col-span-9 object-cover rounded-lg hidden md:flex"
           src={IMAGES[2].src}
           alt={IMAGES[2].alt}
           width={600}
