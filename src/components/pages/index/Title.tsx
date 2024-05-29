@@ -6,8 +6,8 @@ import {
 } from 'react';
 
 export default function Title() {
-  const FIRST_WORD = 'STUDENT';
-  const SECOND_WORD = 'BRANCH';
+  const FIRST_WORD = 'COMPUTER';
+  const SECOND_WORD = 'SOCIETY';
   const MILISECONDS = 80;
   const TIMES = 10;
 
@@ -47,14 +47,14 @@ export default function Title() {
 
   return (
     <div className="flex flex-col w-full my-40 max-w-4xl gap-4 px-6">
-      <h1 className="text-primary-title font-extrabold flex flex-col text-7xl sm:text-8xl md:text-9xl leading-[0.9] overflow-hidden">
+      <h1 className="text-primary-title font-extrabold flex flex-col text-6xl sm:text-8xl md:text-9xl leading-[0.9] overflow-hidden">
         <span className="text-web-gray text-6xl sm:text-7xl md:text-8xl">IEEE</span>
         <span className="flex">
           {
             firstWord.split('').map((letter, i) => (
               <span
                 key={crypto.randomUUID()}
-                className={cn('w-16 sm:w-20 md:w-24 text-center', {
+                className={cn('w-16 sm:w-24 md:w-28 text-center', {
                   'text-web-gray-200': letter !== FIRST_WORD[i],
                 })}
               >
