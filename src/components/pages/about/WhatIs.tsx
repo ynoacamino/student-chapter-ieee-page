@@ -12,10 +12,7 @@ export default function WhatIs() {
           ¿Que es la IEEE Computer Society?
         </h1>
         <p className="w-full max-w-3xl">
-          Con la participación de ingenieros informáticos, científicos, académicos y profesionales
-          de la industria de todas las áreas de la informática, la IEEE Computer Society (CS)
-          establece el estándar para la educación y el compromiso que alimenta el continuo
-          avance tecnológico mundial.
+          La IEEE Computer Society es una organización internacional que reúne a profesionales y estudiantes interesados en el campo de la computación y la tecnología. Se dedica a la promoción del conocimiento y la innovación a través de la organización de conferencias, publicaciones y actividades técnicas.
         </p>
         <Image
           src="/images/about-us/photo1.png"
@@ -26,10 +23,7 @@ export default function WhatIs() {
           id="animation-image-r"
         />
         <p className="w-full max-w-3xl">
-          A través de conferencias, publicaciones y programas, y reuniendo a los líderes de la
-          informática y la ingeniería en cada fase de su carrera para el diálogo, el debate y la
-          colaboración, IEEE CS faculta, da forma y guía el futuro no sólo de sus miembros,
-          sino de la industria en general, permitiendo nuevas oportunidades.
+          Su objetivo es fomentar el avance de la informática y proporcionar recursos valiosos para el desarrollo profesional de sus miembros.
         </p>
       </div>
     </Section>

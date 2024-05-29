@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import { Section } from '@/components/ui/section';
 
@@ -9,24 +8,16 @@ export default function About() {
         <div className="flex flex-col gap-3 text-xl justify-center ">
           <h1 className="text-4xl text-primary-title font-bold">Sobre nosotros</h1>
           <p>
-            El Capítulo Estudiantil de Ingeniería de Sistemas de la Universidad Nacional de
-            San Agustín es una comunidad comprometida con la excelencia académica y el avance
-            tecnológico.
+            El capítulo técnico de IEEE Computer Society en la Universidad Nacional de San Agustín de Arequipa está comprometido con el avance de la ciencia y la tecnología. Nos enfocamos en facilitar el intercambio de información técnica entre nuestros miembros y fomentar un entorno de aprendizaje continuo y desarrollo profesional.
           </p>
           <p>
-            Nos dedicamos a explorar y desarrollar soluciones innovadoras en el vasto
-            campo de los sistemas,abarcando áreas como la ciberseguridad,
-            la inteligencia artificial, el análisis de datos y
-            {' '}
-            <Link href="/events" className="underline">
-              más.
-            </Link>
+            Nuestro principal objetivo es involucrar tanto a estudiantes como a profesionales en el ámbito de las tecnologías digitales, asegurando que se mantengan altos estándares de conocimiento y habilidades técnicas.
           </p>
         </div>
         <Image
           className="w-full aspect-video rounded-lg bg-web-gray-100 object-cover"
           alt=""
-          src="https://res.cloudinary.com/dazt6g3o1/image/upload/v1710883836/bejo8x3wc3qr1pcpxr8m.jpg"
+          src="https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953760/pnmoa0bfgucs69lmt5rq.webp"
           width={600}
           height={600}
         />

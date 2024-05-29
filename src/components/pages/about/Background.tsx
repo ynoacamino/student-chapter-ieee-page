@@ -4,20 +4,20 @@ import { motion } from 'framer-motion';
 
 const IMAGES = [
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903364/mgmqaorpyocwutjj7l1y.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953801/jvunl5jqtwthwsyf0gzd.webp',
+    alt: 'Conocenos 2',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903379/flwwsodtiiwmexcyujqv.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
+    alt: 'Conocenos 3',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903394/la07diffgkjlcb8lyhtj.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953894/wxpk7ugm3f7shschdkar.webp',
+    alt: 'Conocenos 4',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903410/g236shsfhahnpipmwvf8.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953914/tfgzbuwlvuwmedz6ufhm.webp',
+    alt: 'Conocenos 5',
   },
 ];
 

@@ -15,6 +15,37 @@ export interface EventIEEE {
 
 export const UPCOMING_EVENTS: EventIEEE[] = [
   {
+    title: 'Introduccion al uso de Flutter',
+    date: ['22-03-2024'],
+    description: 'Aprende a desarrollar aplicaciones móviles con Flutter, el framework de Google para crear aplicaciones nativas.',
+    background: '',
+    poster: {
+      full: '/images/poster/22032024-IntroduccionAFlutter.png',
+      thumbnail: '/images/poster/22032024-IntroduccionAFlutter.webp',
+      width: 1080,
+      height: 1080,
+    },
+    // link: '',
+    time: '7:00 PM',
+  },
+  {
+    title: 'Preparacion profesional con AWS academy',
+    date: ['14-05-2024'],
+    description: '¡Potencia tu carrera con AWS Academy! Prepárate para el éxito en la nube.',
+    background: '',
+    poster: {
+      full: '/images/poster/14052024-PreparacionAWS.png',
+      thumbnail: '/images/poster/14052024-PreparacionAWS.webp',
+      width: 1080,
+      height: 1080,
+    },
+  },
+];
+
+export const FUTURE_EVENTS: EventIEEE[] = UPCOMING_EVENTS;
+
+export const PAST_EVENTS: EventIEEE[] = [
+  {
     title: 'Envenenamiento de parámetros HTTP',
     date: ['25-11-2023'],
     description: 'Aprende a detectar y prevenir el envenenamiento de parámetros HTTP con el experto en ciberseguridad',
@@ -84,7 +115,3 @@ export const UPCOMING_EVENTS: EventIEEE[] = [
     time: '6:00 PM - 7:00 PM',
   },
 ];
-
-export const FUTURE_EVENTS: EventIEEE[] = UPCOMING_EVENTS;
-
-export const PAST_EVENTS: EventIEEE[] = UPCOMING_EVENTS;

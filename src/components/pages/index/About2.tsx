@@ -1,40 +1,39 @@
 import Gradient from '@/components/ui/gradient';
-import Link from 'next/link';
 import Image from 'next/image';
 import { Section } from '@/components/ui/section';
 
 const IMAGES = [
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903364/mgmqaorpyocwutjj7l1y.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953801/jvunl5jqtwthwsyf0gzd.webp',
+    alt: 'Conocenos 2',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903379/flwwsodtiiwmexcyujqv.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
+    alt: 'Conocenos 3',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903394/la07diffgkjlcb8lyhtj.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953894/wxpk7ugm3f7shschdkar.webp',
+    alt: 'Conocenos 4',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903410/g236shsfhahnpipmwvf8.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953914/tfgzbuwlvuwmedz6ufhm.webp',
+    alt: 'Conocenos 5',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903364/mgmqaorpyocwutjj7l1y.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953801/jvunl5jqtwthwsyf0gzd.webp',
+    alt: 'Conocenos 2',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903379/flwwsodtiiwmexcyujqv.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
+    alt: 'Conocenos 3',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903394/la07diffgkjlcb8lyhtj.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953894/wxpk7ugm3f7shschdkar.webp',
+    alt: 'Conocenos 4',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903410/g236shsfhahnpipmwvf8.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953914/tfgzbuwlvuwmedz6ufhm.webp',
+    alt: 'Conocenos 5',
   },
 ];
 
@@ -64,18 +63,10 @@ export default function About2() {
         <div className="flex flex-col gap-3 text-xl justify-center max-w-6xl">
           <h1 className="text-4xl text-primary-title font-bold">Sobre nosotros</h1>
           <p>
-            El Capítulo Estudiantil de Ingeniería de Sistemas de la Universidad Nacional de
-            San Agustín es una comunidad comprometida con la excelencia académica y el avance
-            tecnológico.
+            Nuestro capítulo se dedica a promover actividades y eventos que estimulen la investigación y el desarrollo en áreas relacionadas con la tecnología y la ingeniería. A través de talleres, visitas técnicas, cursos y otras iniciativas, buscamos crear un impacto positivo en la comunidad universitaria y en la ciudad de Arequipa.
           </p>
           <p>
-            Nos dedicamos a explorar y desarrollar soluciones innovadoras en el vasto
-            campo de los sistemas,abarcando áreas como la ciberseguridad,
-            la inteligencia artificial, el análisis de datos y
-            {' '}
-            <Link href="/events" className="underline">
-              más.
-            </Link>
+            Nuestra misión es ofrecer oportunidades que impulsen el crecimiento académico y profesional de nuestros miembros.
           </p>
         </div>
       </div>

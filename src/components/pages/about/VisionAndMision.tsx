@@ -10,14 +10,7 @@ export default function VisionAndMision() {
           </h1>
           <div className="w-full max-w-md flex flex-col gap-4">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Donec aliquam eget dui et mattis. Cras scelerisque venenatis tellus
-              sagittis tincidunt.
-            </p>
-            <p>
-              Phasellus condimentum, ligula et semper mattis, est justo fringilla mi,
-              a ultrices nunc nibh sed nulla. Donec faucibus, diam quis scelerisque semper,
-              nunc sem vehicula risus, sed pulvinar diam felis vel libero.
+              Nuestra visión es convertirnos en un referente en la promoción del conocimiento tecnológico y científico, creando una comunidad vibrante y colaborativa que inspire a los estudiantes y profesionales a liderar proyectos innovadores y a contribuir activamente en el desarrollo de la tecnología.
             </p>
           </div>
         </article>
@@ -27,14 +20,7 @@ export default function VisionAndMision() {
           </h1>
           <div className="w-full max-w-md flex flex-col gap-4">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Donec aliquam eget dui et mattis. Cras scelerisque venenatis tellus
-              sagittis tincidunt.
-            </p>
-            <p>
-              Phasellus condimentum, ligula et semper mattis, est justo fringilla mi,
-              a ultrices nunc nibh sed nulla. Donec faucibus, diam quis scelerisque semper,
-              nunc sem vehicula risus, sed pulvinar diam felis vel libero.
+              Nuestra misión es fomentar el interés y la participación en el campo de la informática y la tecnología, ofreciendo oportunidades de aprendizaje y desarrollo profesional a través de diversas actividades y eventos. Buscamos crear un entorno de cooperación y apoyo que promueva la excelencia técnica y el crecimiento continuo de nuestros miembros.
             </p>
           </div>
         </article>

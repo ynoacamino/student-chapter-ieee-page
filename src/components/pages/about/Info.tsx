@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 const IMAGES = [
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903364/mgmqaorpyocwutjj7l1y.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953801/jvunl5jqtwthwsyf0gzd.webp',
+    alt: 'Conocenos 2',
   },
   {
-    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1710903379/flwwsodtiiwmexcyujqv.webp',
-    alt: '',
+    src: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
+    alt: 'Conocenos 3',
   },
 ];
 
@@ -22,25 +22,10 @@ export default function Info() {
               Marcamos la pauta para el futuro
             </h1>
             <p className="w-full max-w-3xl">
-              Inspirando y conectando a profesionales de todas las áreas de la
-              {' '}
-              <strong>
-                informática y
-                de todos los niveles profesionales,
-              </strong>
-              {' '}
-              IEEE CS guía el futuro de sus miembros y de
-              la industria en general, permitiendo nuevas oportunidades tecnológicas para
-              {' '}
-              <strong>
-                servir mejor a nuestro mundo.
-              </strong>
+              Para aquellos interesados en formar parte de nuestra comunidad, ofrecemos una variedad de actividades que incluyen talleres, cursos, visitas técnicas y seminarios.
             </p>
             <p className="w-full max-w-3xl">
-              La informática y de todos los niveles profesionales, IEEE CS guía el futuro de
-              sus miembros y de la
-              {' '}
-              <strong>industria en general.</strong>
+              Estas iniciativas no solo mejoran las habilidades técnicas de nuestros miembros, sino que también fomentan la colaboración y el intercambio de conocimientos entre estudiantes y profesionales.
             </p>
           </div>
           <Image
@@ -66,24 +51,10 @@ export default function Info() {
               Lideramos los desarrollos y avances en los campos de la informática y la ingeniería
             </h1>
             <p className="w-full max-w-3xl">
-              <strong>Durante más de 75 años</strong>
-              , el IEEE CS y sus miembros han alimentado la comunidad de
-              la informática y la tecnología, desarrollando profesionales líderes,
-              {' '}
-              impulsando la rápida evolución de las tecnologías y
-              <strong>
-                {' '}
-                fomentando iniciativas basadas en la comunidad.
-              </strong>
+              Invitamos a todos los estudiantes y profesionales interesados en la tecnología a unirse a nosotros participando en la variedad de actividades que realizamos cada cierto tiempo.
             </p>
             <p className="w-full max-w-3xl">
-              Como organización,
-              {' '}
-              <strong>IEEE CS continuará sirviendo como líder en la identificación,</strong>
-              {' '}
-              apoyo y avance de las oportunidades tecnológicas que
-              {' '}
-              <strong>benefician a la humanidad.</strong>
+              Juntos, podemos impulsar el crecimiento de la comunidad tecnológica en Arequipa y contribuir al desarrollo de innovaciones que impacten positivamente en la sociedad.
             </p>
           </div>
           <Image
