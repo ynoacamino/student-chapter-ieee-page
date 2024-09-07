@@ -1,5 +1,4 @@
 import { CalendarDays } from 'lucide-react';
-import Image from 'next/image';
 
 import { UPCOMING_EVENTS } from '@/data/events';
 import { Section } from '@/components/ui/section';
@@ -31,7 +30,7 @@ export default function UpcomingEvents() {
         }
           </main>
         </div>
-        <Image
+        <img
           className="w-full aspect-video bg-web-gray-100 rounded-lg object-cover"
           src="https://res.cloudinary.com/dazt6g3o1/image/upload/v1710884084/xqhmnbfvo6dmphvfpb7h.jpg"
           alt=""

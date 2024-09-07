@@ -1,5 +1,4 @@
 import Gradient from '@/components/ui/gradient';
-import Image from 'next/image';
 import { Section } from '@/components/ui/section';
 
 const IMAGES = [
@@ -46,7 +45,7 @@ export default function About2() {
             {
             IMAGES.map(({ alt, src }) => (
               <div key={crypto.randomUUID()} className="w-[40rem] pr-4">
-                <Image
+                <img
                   className="w-full aspect-video rounded-lg bg-web-gray-100 dark:bg-accent object-cover"
                   alt={alt}
                   src={src}

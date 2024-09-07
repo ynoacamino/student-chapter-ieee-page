@@ -1,5 +1,4 @@
 import { Section } from '@/components/ui/section';
-import Image from 'next/image';
 
 const IMAGES = [
   {
@@ -28,7 +27,7 @@ export default function Info() {
               Estas iniciativas no solo mejoran las habilidades técnicas de nuestros miembros, sino que también fomentan la colaboración y el intercambio de conocimientos entre estudiantes y profesionales.
             </p>
           </div>
-          <Image
+          <img
             src={IMAGES[0].src}
             alt={IMAGES[0].alt}
             width={600}
@@ -38,7 +37,7 @@ export default function Info() {
           />
         </article>
         <article className="grid md:grid-cols-2 gap-x-16 gap-y-6 items-center">
-          <Image
+          <img
             src={IMAGES[1].src}
             alt={IMAGES[1].alt}
             width={600}
@@ -57,7 +56,7 @@ export default function Info() {
               Juntos, podemos impulsar el crecimiento de la comunidad tecnológica en Arequipa y contribuir al desarrollo de innovaciones que impacten positivamente en la sociedad.
             </p>
           </div>
-          <Image
+          <img
             src={IMAGES[1].src}
             alt={IMAGES[1].alt}
             width={600}

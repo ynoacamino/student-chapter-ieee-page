@@ -1,6 +1,6 @@
-'use client';
+/* eslint-disable jsx-a11y/img-redundant-alt */
 
-import Image from 'next/image';
+'use client';
 
 import { IMAGES } from '@/data/gallery';
 import { useGallery } from '@/lib/hooks';
@@ -26,14 +26,14 @@ export default function Gallery() {
               rel="noreferrer"
               className="hover:scale-105 transition-transform duration-200 ease-in-out relative"
             >
-              <Image
+              <img
                 src={image.image.thumbnail}
                 alt="Gallery image"
                 width={600}
                 height={600}
                 className="w-full h-auto rounded-md bg-web-gray-100"
               />
-              <Image
+              <img
                 src={image.image.thumbnail}
                 alt="Gallery image"
                 width={600}
@@ -56,14 +56,14 @@ export default function Gallery() {
               rel="noreferrer"
               className="hover:scale-105 transition-transform duration-200 ease-in-out relative"
             >
-              <Image
+              <img
                 src={image.image.thumbnail}
                 alt="Gallery image"
                 width={600}
                 height={600}
                 className="w-full h-auto rounded-md bg-web-gray-100"
               />
-              <Image
+              <img
                 src={image.image.thumbnail}
                 alt="Gallery image"
                 width={600}
@@ -86,14 +86,14 @@ export default function Gallery() {
               rel="noreferrer"
               className="hover:scale-105 transition-transform duration-200 ease-in-out relative"
             >
-              <Image
+              <img
                 src={image.image.thumbnail}
                 alt="Gallery image"
                 width={600}
                 height={600}
                 className="w-full h-auto rounded-md bg-web-gray-100"
               />
-              <Image
+              <img
                 src={image.image.thumbnail}
                 alt="Gallery image"
                 width={600}

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { TEAM } from '@/data/team';
 import { Github, Instagram, Linkedin } from 'lucide-react';
 import Link from '@/components/ui/link';
@@ -17,7 +16,7 @@ export default function Description() {
             className="grid grid-cols-1 md:grid-cols-3 gap-x-0 md:gap-x-6 gap-y-10 md:gap-y-0 w-full"
             id={position.en}
           >
-            <Image
+            <img
               src={photo}
               alt={name}
               width={600}

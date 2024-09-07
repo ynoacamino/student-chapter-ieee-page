@@ -1,7 +1,6 @@
 'use client';
 
 import { CalendarDays, Clock } from 'lucide-react';
-import Image from 'next/image';
 
 import { UPCOMING_EVENTS } from '@/data/events';
 import { Section } from '@/components/ui/section';
@@ -62,7 +61,7 @@ export default function UpcomingEvents() {
                   rel="noreferrer"
                   className=""
                 >
-                  <Image
+                  <img
                     className="w-full aspect-square bg-web-gray-100 rounded-lg object-cover"
                     src={poster.thumbnail}
                     alt={title}

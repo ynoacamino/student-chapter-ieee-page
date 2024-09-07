@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Section } from '@/components/ui/section';
 
 export default function About() {
@@ -14,7 +13,7 @@ export default function About() {
             Nuestro principal objetivo es involucrar tanto a estudiantes como a profesionales en el ámbito de las tecnologías digitales, asegurando que se mantengan altos estándares de conocimiento y habilidades técnicas.
           </p>
         </div>
-        <Image
+        <img
           className="w-full aspect-video rounded-lg bg-web-gray-100 object-cover"
           alt=""
           src="https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953760/pnmoa0bfgucs69lmt5rq.webp"

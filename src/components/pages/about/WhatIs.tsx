@@ -1,5 +1,4 @@
 import { Section } from '@/components/ui/section';
-import Image from 'next/image';
 
 export default function WhatIs() {
   return (
@@ -14,7 +13,7 @@ export default function WhatIs() {
         <p className="w-full max-w-3xl">
           La IEEE Computer Society es una organización internacional que reúne a profesionales y estudiantes interesados en el campo de la computación y la tecnología. Se dedica a la promoción del conocimiento y la innovación a través de la organización de conferencias, publicaciones y actividades técnicas.
         </p>
-        <Image
+        <img
           src="/images/about-us/photo1.png"
           alt="IEEE Computer Society"
           width={700}

@@ -2,7 +2,6 @@
 
 import { EventIEEE } from '@/data/events';
 import { useGallery } from '@/lib/hooks';
-import Image from 'next/image';
 
 export function Photos({ PHOTOS, id }: { PHOTOS: EventIEEE[], id: string }) {
   useGallery({ id });
@@ -19,7 +18,7 @@ export function Photos({ PHOTOS, id }: { PHOTOS: EventIEEE[], id: string }) {
           rel="noreferrer"
           className="hover:scale-105 transition-transform duration-200 ease-in-out"
         >
-          <Image
+          <img
             key={crypto.randomUUID()}
             className="aspect-square w-full rounded-lg bg-web-gray-100 object-cover"
             src={poster.thumbnail}
