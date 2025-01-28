@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://ieee-ynoacamino.vercel.app/',
+    url: 'https://ieee.ynoacamino.site/',
     title: 'IEEE UNSA | Student Chapter',
     description: 'Pagina web oficial del capitulo estudiantil de la IEEE de la Universidad Nacional de San Agustin.',
     images: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     ],
     title: 'IEEE UNSA | Student Chapter',
   },
-  metadataBase: new URL('https://ieee-ynoacamino.vercel.app/'),
+  metadataBase: new URL('https://ieee.ynoacamino.site/'),
 };
 
 const open_sans = Open_Sans({
