@@ -1,6 +1,13 @@
 <h1 align="center">
 Actualización: ¡Esta página ganó el concurso! 🎉🎉
 </h1>
+<div align="center">
+<img
+src="https://ynoa-uploader.ynoacamino.site/uploads/1738027734_Yenaro%20Noa%20Camino%20-%20NOA%20-%20PARTICIPANTE%20GANADOR-1.webp"
+alt="Certificado de Ganador"
+width="400px"
+>
+</div>
 
 # ➕ Pagina web del capitulo estudiantil de la UNSA
 
