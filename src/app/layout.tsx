@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Pagina web oficial del capitulo estudiantil de la IEEE de la Universidad Nacional de San Agustin.',
     images: [
       {
-        url: 'https://ynoa-uploader.ynoacamino.site/uploads/1738166187_Screenshot%20from%202025-01-29%2010-56-14.png',
+        url: 'https://ynoa-uploader.ynoacamino.site/uploads/1738166454_Screenshot%20from%202025-01-29%2011-00-45.png',
         width: 600,
         height: 407,
         alt: 'IEEE UNSA | Student Chapter',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: 'Pagina web oficial del capitulo estudiantil de la IEEE de la Universidad Nacional de San Agustin.',
     images: [
       {
-        url: 'https://ynoa-uploader.ynoacamino.site/uploads/1738166187_Screenshot%20from%202025-01-29%2010-56-14.png',
+        url: 'https://ynoa-uploader.ynoacamino.site/uploads/1738166454_Screenshot%20from%202025-01-29%2011-00-45.png',
         width: 600,
         height: 407,
         alt: 'IEEE UNSA | Student Chapter',
