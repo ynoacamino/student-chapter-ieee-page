@@ -12,30 +12,30 @@ export const IMAGES: ImageIEEE[][] = [
   [
     {
       image: {
-        full: '/images/gallery/img_1.jpg',
-        thumbnail: '/images/gallery/img_1.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953760/pnmoa0bfgucs69lmt5rq.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953760/pnmoa0bfgucs69lmt5rq.webp',
       },
       alt: '',
-      width: 1016,
-      height: 1280,
+      width: 1000,
+      height: 750,
     },
     {
       image: {
-        full: '/images/gallery/img_2.jpg',
-        thumbnail: '/images/gallery/img_2.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953801/jvunl5jqtwthwsyf0gzd.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953801/jvunl5jqtwthwsyf0gzd.webp',
       },
       alt: '',
-      width: 1280,
-      height: 853,
+      width: 700,
+      height: 525,
     },
     {
       image: {
-        full: '/images/gallery/img_3.jpg',
-        thumbnail: '/images/gallery/img_3.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
       },
       alt: '',
-      width: 1280,
-      height: 1280,
+      width: 700,
+      height: 525,
     },
     {
       image: {
@@ -48,12 +48,12 @@ export const IMAGES: ImageIEEE[][] = [
     },
     {
       image: {
-        full: '/images/gallery/img_4.jpg',
-        thumbnail: '/images/gallery/img_4.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953914/tfgzbuwlvuwmedz6ufhm.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953914/tfgzbuwlvuwmedz6ufhm.webp',
       },
       alt: '',
-      width: 853,
-      height: 1280,
+      width: 700,
+      height: 525,
     },
   ],
   [
@@ -68,12 +68,12 @@ export const IMAGES: ImageIEEE[][] = [
     },
     {
       image: {
-        full: '/images/gallery/img_5.jpg',
-        thumbnail: '/images/gallery/img_5.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953914/tfgzbuwlvuwmedz6ufhm.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953914/tfgzbuwlvuwmedz6ufhm.webp',
       },
       alt: '',
-      width: 853,
-      height: 1280,
+      width: 700,
+      height: 525,
     },
     {
       image: {
@@ -86,41 +86,32 @@ export const IMAGES: ImageIEEE[][] = [
     },
     {
       image: {
-        full: '/images/gallery/img_6.jpg',
-        thumbnail: '/images/gallery/img_6.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953760/pnmoa0bfgucs69lmt5rq.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953760/pnmoa0bfgucs69lmt5rq.webp',
       },
       alt: '',
-      width: 1280,
-      height: 1027,
+      width: 1000,
+      height: 750,
     },
     {
       image: {
-        full: '/images/gallery/img_7.jpg',
-        thumbnail: '/images/gallery/img_7.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953801/jvunl5jqtwthwsyf0gzd.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953801/jvunl5jqtwthwsyf0gzd.webp',
       },
       alt: '',
-      width: 1280,
-      height: 720,
-    },
-    {
-      image: {
-        full: '/images/gallery/img_8.jpg',
-        thumbnail: '/images/gallery/img_8.webp',
-      },
-      alt: '',
-      width: 1280,
-      height: 853,
+      width: 700,
+      height: 525,
     },
   ],
   [
     {
       image: {
-        full: '/images/gallery/img_9.jpg',
-        thumbnail: '/images/gallery/img_9.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
       },
       alt: '',
-      width: 1280,
-      height: 853,
+      width: 700,
+      height: 525,
     },
     {
       image: {
@@ -133,30 +124,21 @@ export const IMAGES: ImageIEEE[][] = [
     },
     {
       image: {
-        full: '/images/gallery/img_10.jpg',
-        thumbnail: '/images/gallery/img_10.webp',
+        full: '/images/poster/DesarrolloMovil.png',
+        thumbnail: '/images/poster/DesarrolloMovil.webp',
       },
       alt: '',
-      width: 853,
-      height: 1280,
+      width: 1080,
+      height: 1080,
     },
     {
       image: {
-        full: '/images/gallery/img_11.jpg',
-        thumbnail: '/images/gallery/img_11.webp',
+        full: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
+        thumbnail: 'https://res.cloudinary.com/dazt6g3o1/image/upload/v1716953873/yay6ppum6lqqwrgn57kr.webp',
       },
       alt: '',
-      width: 1280,
-      height: 893,
-    },
-    {
-      image: {
-        full: '/images/gallery/img_12.jpg',
-        thumbnail: '/images/gallery/img_12.webp',
-      },
-      alt: '',
-      width: 1280,
-      height: 1280,
+      width: 700,
+      height: 525,
     },
   ],
 ];
